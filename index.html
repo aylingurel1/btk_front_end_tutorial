@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Bizim kullandığımz bootstrap'in grid i kütüphane 12 li grid üzerinden devam ediyor ama daha fazla olanları da var.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--bootstrap cdn ile projeye yüklemiş olduk.css dosyasını buraya/integrity ilgili dosya değişirse html tutayacağı için inmeyecek-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="assets/css/stlye.css"><!--css dosyasının yolunu kaydediyoruz-->
+    <!--swipperdan çektik/ link ve script yerini değiştirdik-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="container"> <!--container class'tır-->
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+
+                        <span>Welcome to Pharma. We provides medical accessoies</span>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex justify-content-end">
+                            <!--gap değeri iki fleximin(kutunun) arasındaki boşluğu sağlıyor-->
+                            <a href="tel:+(404) 850 - 7080" class="d-flex gap-2 align-items-center me-4">
+                                <i class="icon icon-phone"></i>
+                                <span class="me-2"> +(404) 850 - 7080</span>
+                            </a>
+                            <a href="#" class="d-flex gap-2 align-items-center">
+                                <i class="icon icon-mail"></i>
+                                <span class=" me-2"> info@aylngurel.org</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/icon/Logo.png" alt="Logo">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a href="#" class="btn-main-green"> Appointment </a>
+
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="swiper slider--main">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider-main">
+                        <div class="container position-relative"> <!--çizgilerin dışına çıkmasın diye relative -->
+                            <div class="slider-main-content ">
+                                <div class="slider-main-content-top-info">
+                                    MEDICAL PROFESSINS
+                                </div>
+                                <div class="slider-main-content-title">
+                                    Makes Your Health Better Will Makes Us Better
+                                </div>
+                                <div class="slider-main-content-desc">
+                                    Our team of highly trained professionals uses the latest healing technologies to
+                                    restore you to
+                                    pain-free health quickly and easily.
+
+                                </div>
+                                <a href="#" class="btn-main-blue"> Get Started </a>
+
+
+                            </div>
+                        </div>
+                        <img src="assets/img/team/resim.jpg" class="slider-main-img" alt="slider 1">
+
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-main">
+                        <div class="container position-relative"> <!--çizgilerin dışına çıkmasın diye relative -->
+                            <div class="slider-main-content">
+                                <div class="slider-main-content-top-info">
+                                    MEDICAL PROFESSINS
+                                </div>
+                                <div class="slider-main-content-title">
+                                    Makes Your Health Better Will Makes Us Better
+                                </div>
+                                <div class="slider-main-content-desc">
+                                    Our team of highly trained professionals uses the latest healing technologies to
+                                    restore you to
+                                    pain-free health quickly and easily.
+
+                                </div>
+                                <a href="#" class="btn-main-blue"> Get Started </a>
+
+
+                            </div>
+                        </div>
+                        <img src="assets/img/team/resim.jpg" class="slider-main-img" alt="slider 1">
+
+                    </div>
+
+                </div>
+            </div>
+            <script>
+                const swiper = new Swiper(".slider--main", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+
+                });
+            </script>
+
+
+    </section>
+    <!--class="w-100" taşma olmasın diye-->
+
+    <section class="me-5">
+        <div class="container ">
+
+            <div class="text-center">
+                <span class="section-service-title">Services</span>
+                <div class="fs-1" fw-medium>Feel Like Home With Best<br> Medical Care</div>
+            </div>
+            <!--o kutulara service-card dedik. service card hover olduğu durumda content in içine aldık. gizledikten sonra da img göster dedik-->
+            <div class="row me-5">
+                <!--Angioplasty-->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="service-card">
+                        <div class="service-card-hover-img">
+                            <img src="assets/img/icon/hospital.png" class="w-100" alt="">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="service-card-img">
+                                <img src="assets/img/icon/ilac.png" alt="">
+                            </div>
+                            <div class="service-card-title">Angioplasty</div>
+                            <div class="service-card-desc">Our team of highl professionals uses the latest heal
+                                echnologies health quickly and easily.</div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="service-card-link">Read More
+                                        <img src="assets/img/icon/readmoreicon.png" alt="+">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Cardiology-->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="service-card">
+                        <div class="service-card-hover-img">
+                            <img src="assets/img/icon/hospital.png" class="w-100" alt="">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="service-card-img">
+                                <img src="assets/img/icon/fixedheart.png" alt="">
+                            </div>
+                            <div class="service-card-title">Cardiology</div>
+                            <div class="service-card-desc">Our team of highl professionals uses the latest heal
+                                echnologies health quickly and easily.</div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="service-card-link">Read More
+                                        <img src="assets/img/icon/readmoreicon.png" alt="+">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!--Dental-->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="service-card">
+                        <div class="service-card-hover-img">
+                            <img src="assets/img/icon/hospital.png" class="w-100" alt="">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="service-card-img">
+                                <img src="assets/img/icon/diş.png" alt="">
+                            </div>
+                            <div class="service-card-title">Dental</div>
+                            <div class="service-card-desc">Our team of highl professionals uses the latest heal
+                                echnologies health quickly and easily.</div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="service-card-link">Read More
+                                        <img src="assets/img/icon/readmoreicon.png" alt="+">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Dental-->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="service-card">
+                        <div class="service-card-hover-img">
+                            <img src="assets/img/icon/hospital.png" class="w-100" alt="">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="service-card-img">
+                                <img src="assets/img/icon/diş.png" alt="">
+                            </div>
+                            <div class="service-card-title">Dental</div>
+                            <div class="service-card-desc">Our team of highl professionals uses the latest heal
+                                echnologies health quickly and easily.</div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="service-card-link">Read More
+                                        <img src="assets/img/icon/readmoreicon.png" alt="+">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Eye Care-->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="service-card">
+                        <div class="service-card-hover-img">
+                            <img src="assets/img/icon/hospital.png" class="w-100" alt="">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="service-card-img">
+                                <img src="assets/img/icon/eye.png" alt="">
+                            </div>
+                            <div class="service-card-title">Eye Care</div>
+                            <div class="service-card-desc">Our team of highl professionals uses the latest heal
+                                echnologies health quickly and easily.</div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="service-card-link">Read More
+                                        <img src="assets/img/icon/readmoreicon.png" alt="+">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Endocrinology-->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="service-card">
+                        <div class="service-card-hover-img">
+                            <img src="assets/img/icon/hospital.png" class="w-100" alt="">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="service-card-img">
+                                <img src="assets/img/icon/beyin.png" alt="">
+                            </div>
+                            <div class="service-card-title">Endocrinology</div>
+                            <div class="service-card-desc">Our team of highl professionals uses the latest heal
+                                echnologies health quickly and easily.</div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="service-card-link">Read More
+                                        <img src="assets/img/icon/readmoreicon.png" alt="+">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--Endocrinology-->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="service-card">
+                        <div class="service-card-hover-img">
+                            <img src="assets/img/icon/hospital.png" class="w-100" alt="">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="service-card-img">
+                                <img src="assets/img/icon/beyin.png" alt="">
+                            </div>
+                            <div class="service-card-title">Endocrinology</div>
+                            <div class="service-card-desc">Our team of highl professionals uses the latest heal
+                                echnologies health quickly and easily.</div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="service-card-link">Read More
+                                        <img src="assets/img/icon/readmoreicon.png" alt="+">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!--Orthopaedics-->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <i class="service-card-icon-phone">
+                            <img src="assets/img/icon/phone.png" alt="">
+                        </i>
+                        <div class="service-card-hover-img">
+                            <img src="assets/img/icon/hospital.png" class="w-100" alt="">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="service-card-img">
+                                <img src="assets/img/icon/igne.png" alt="">
+                            </div>
+                            <div class="service-card-title">Orthopaedics</div>
+                            <div class="service-card-desc">Our team of highl professionals uses the latest heal
+                                echnologies health quickly and easily.</div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="service-card-link">Read More
+                                        <img src="assets/img/icon/readmoreicon.png" alt="+">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+    </section>
+    <section class="call-center mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12  col-lg-6 ms-auto">
+                    <div class="call-center-card">
+                        <span class="section-service-title">About Us</span>
+                        <div class="fs-2 fw-normal mb-3">The Heart And Science Of Medicate Test</div>
+                        <div class="fs-5 fw-normal">Capitalize on low hanging fruit to identify a ballpark value
+                            added activity to beta test. Override the digital divide with information highway will
+                            close.</div>
+                            <div class="row my-4">
+                                <div class="col-6">
+                                        <div class="d-flex gap-2"> 
+                                            <div class="call-center-card-icon">
+                                                <i class="card-icon-1">
+                                                    <img src="assets/img/icon/button1.png" alt="">
+                                                </i>
+                                            </div> 
+                                            <span>Multi Speciality Pharma Treatment</span>  
+                                        </div>  
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex gap-2">
+                                        <div class="call-center-card-icon">
+                                            <i class="card-icon-1">
+                                                <img src="assets/img/icon/button2.png" alt="">
+                                            </i>
+                                        </div> 
+                                        <span>24 Hours Medical Service</span>
+                                    </div>
+    
+                                
+                                </div>
+                            </div>
+                  <a href="#" class="btn-main-blue">More About Us</a>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="brand">
+            <div class="container">
+                <div class="d-flex flex-wrap gap-4 justify-content-center justify-content-lg-between">
+                    <img src="assets/img/icon/1.png" alt="">
+                    <img src="assets/img/icon/2.png" alt="">
+                    <img src="assets/img/icon/3.png" alt="">
+                    <img src="assets/img/icon/4.png" alt="">
+                    <img src="assets/img/icon/5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mb-5">
+            <div class="meeting-wrapper">
+                <div class="fs-2 fw-medium meeting-wrapper-content">
+                    Schedule an imperson or virtual appointment today
+                </div>
+                <a href="#" class="btn-main-green text-black">Book an Appointment </a>
+                <!--text-black linkin rengini siyah yaptık-->
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-lg-6 my-2">
+                    <div class="special-care-wrapper">
+                        <span class="section-service-title">SPEACIAL CARE</span>
+                        <div class="fs-2 fw-medium mb-3">We provide a best care for your<br> health with specialist
+                        </div>
+                        <p>
+                            Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
+                            procrastinate B2C users after installed base benefits. Dramatically visualize customer.
+                        </p>
+                        <p class="mb-5">
+                            Completely synergize resource taxing relationships via premier niche markets. Professionally
+                            cultivate one-to-one customer service with robust ideas. Dynamically innovate.
+                        </p>
+                        <ul class="special-care-list mb-5">
+                            <li>
+                                20+ years of excellence
+                            </li>
+                            <li>
+                                Professional Experts
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-main-blue">Discover Now</a>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-5 ms-auto special-care-content my-2 ">
+                    <div class="special-care-content-info">
+                        <span class="d-block fs-2 fw-semibold text-white">Mark Broownn</span>
+                        <span class="d-block fs-5 fw-medium text-white-50">Multispecialist</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 ">
+                            <div class="special-care-content-img">
+                                <img src="assets/img/icon/doctor1.png" class="w-100 h-100 object-fit-cover" alt="specialcare">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="special-care-content-img">
+                                <img src="assets/img/icon/doctor2.png" class="w-100 h-100 object-fit-cover" alt="specialcare">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr> <!--çizgi oluşturuyor-->
+    <section>
+        <div class="container">
+            <div class="text-center">
+                <span class="section-service-title">FEEDBACK</span>
+                <div class="fs-2 fw-medium mb-3 mx-auto" style="max-width: 450px;">Feedbacks about our service from the
+                    bottom of heart</div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="feedback-card-wrapper">
+                <div class="swiper  slider--feedback-card">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="feedback-card">
+                                <div class="d-flex justify-content-between align-items-center pb-3 mb-3 border-bottom">
+                                    <div class="d-flex gap-3">
+                                        <img src="assets/img/icon/photo1.png" class="rounded-circle" alt="">
+                                        <div>
+                                            <span class="d-block fs-4">Robert Davis</span>
+                                            <span class="d-block fs-6">Dental Patient</span>
+                                        </div>
+                                    </div>
+                                    <img src="assets/img/icon/tirnakicon.png" alt="">
+                                </div>
+
+                                <p>Completely synergize resource taxing relationships via premier niche markets.
+                                    Professionally cultivate one-to-one customer service with robust ideas.
+                                    Dynamically
+                                    innovate.</p>
+                                <div class="d-flex gap-1">
+                                    <i class="icon-star active"></i>
+                                    <i class="icon-star active"></i>
+                                    <i class="icon-star active"></i>
+                                    <i class="icon-star active"></i>
+
+                                    <i class="icon-star "></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="feedback-card">
+                                <div class="d-flex justify-content-between align-items-center pb-3 mb-3 border-bottom">
+                                    <div class="d-flex gap-3">
+                                        <img src="assets/img/icon/canankaratay.webp"
+                                            class="rounded-circle object-fit-cover" style="object-position: top"
+                                            width="69px" height="69px">
+                                        <div>
+                                            <span class="d-block fs-4">Canan Karatay</span>
+                                            <span class="d-block fs-6">Dental Patient</span>
+                                        </div>
+                                    </div>
+                                    <img src="assets/img/icon/tirnakicon.png" alt="">
+                                </div>
+
+                                <p>Completely synergize resource taxing relationships via premier niche markets.
+                                    Professionally cultivate one-to-one customer service with robust ideas. Dynamically
+                                    innovate.</p>
+                                <div class="d-flex gap-1">
+                                    <i class="icon-star active"></i>
+                                    <i class="icon-star active"></i>
+                                    <i class="icon-star active"></i>
+                                    <i class="icon-star "></i>
+
+                                    <i class="icon-star "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback-card">
+                                <div class="d-flex justify-content-between align-items-center pb-3 mb-3 border-bottom">
+                                    <div class="d-flex gap-3">
+                                        <img src="assets/img/icon/canankaratay.webp"
+                                            class="rounded-circle object-fit-cover" style="object-position: top"
+                                            width="69px" height="69px">
+                                        <div>
+                                            <span class="d-block fs-4">Canan Karatay</span>
+                                            <span class="d-block fs-6">Dental Patient</span>
+                                        </div>
+                                    </div>
+                                    <img src="assets/img/icon/tirnakicon.png" alt="">
+                                </div>
+
+                                <p>Completely synergize resource taxing relationships via premier niche markets.
+                                    Professionally cultivate one-to-one customer service with robust ideas. Dynamically
+                                    innovate.</p>
+                                <div class="d-flex gap-1">
+                                    <i class="icon-star active"></i>
+                                    <i class="icon-star active"></i>
+                                    <i class="icon-star active"></i>
+                                    <i class="icon-star "></i>
+
+                                    <i class="icon-star "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            const swiper2 = new Swiper(".slider--feedback-card", {
+                
+                slidesPerView: 1,//bütün ekranlarda 2 gözükür kırılım nokrası vermediğim için
+                spaceBetween: 15,// tablet ve mobilim 1 görecek
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+               
+              720: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+               },
+               992: {
+               slidesPerView: 3,
+               spaceBetween: 30,
+                },},
+              
+   
+            }
+            );
+
+        </script>
+    </section>
+    <section>
+        <div class="why-choose-us">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-service-title">WHY CHOOSING PHARMA</span>
+                    <p class="text-gray">
+                        Completely synergize resource taxing relationships via premier niche markets.<br />
+                        Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate.
+                    </p>
+                </div>
+                <div class="why-choose-us-url">
+                    <a href="#">Blood clotting disorder</a>
+                    <a href="#">Blood clotting disorder</a>
+                    <a href="#">Blood clotting disorder</a>
+                    <a href="#">Blood clotting disorder</a>
+                    <a href="#">Blood clotting disorder</a>
+                    <a href="#">Blood clotting disorder</a>
+                    <a href="#">Blood clotting disorder</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-main-blue py-5 mb-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <div>
+                        <span class="section-service-title text-white fs-6">MEDICAL EXPERTS</span>
+                        <div class="fs-4 fw-semibold text-white">The Professional Doctors</div>
+                    </div>
+                    <a href="#" class="btn-main-green">Appointment</a>
+                </div>
+                <div class="swiper slider--team">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-card-img">
+                                    <img src="assets/img/team/member-1.png" alt="">
+                                </div>
+                                <div class="team-card-title">
+                                    Vanseena Adams
+                                </div>
+                                <div class="team-card-desc">
+                                    Dental Patient
+                                </div>
+                                <div class="team-card-social-media">
+                                    <a href="#" class="icon-instagram"></a>
+                                    <a href="#" class="icon-facebook"></a>
+                                    <a href="#" class="icon-twitter"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-card-img">
+                                    <img src="assets/img/team/member-2.png" alt="">
+                                </div>
+                                <div class="team-card-title">
+                                    Dr. Helen Wilmore
+                                </div>
+                                <div class="team-card-desc">
+                                    Dental Patient
+                                </div>
+                                <div class="team-card-social-media">
+                                    <a href="#" class="icon-instagram"></a>
+                                    <a href="#" class="icon-twitter"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mb-5">
+                            <div class="team-card ">
+                                <div class="team-card-img">
+                                    <img src="assets/img/team/member-3.png" alt="">
+                                </div>
+                                <div class="team-card-title">
+                                    Dr. Kate Winslot
+                                </div>
+                                <div class="team-card-desc">
+                                    Dental Patient
+                                </div>
+                                <div class="team-card-social-media">
+                                    <a href="#" class="icon-facebook"></a>
+                                    <a href="#" class="icon-twitter"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/team/line.png" class="team-card-line w-100">
+            <div class="container pt-5">
+                <div class="swiper slider--istatictic">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-istatictic">
+                                <div class="card-istatictic-number"> 25
+                                </div>
+                                <div class="card-istatictic-content">Years Experience
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-istatictic">
+                                <div class="card-istatictic-number"> 893 </div>
+                                <div class="card-istatictic-content"> Years Experience </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-istatictic">
+                                <div class="card-istatictic-number"> 75 </div>
+                                <div class="card-istatictic-content"> Years Experience </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-istatictic">
+                                <div class="card-istatictic-number"> 673 k </div>
+                                <div class="card-istatictic-content"> Happy Clients </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-istatictic">
+                                <div class="card-istatictic-number"> 751 </div>
+                                <div class="card-istatictic-content"> Pharmacies Partners </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <script>
+            const swiper1 = new Swiper(".slider--team", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints:{
+                    768:{
+                slidesPerView: 2,
+                spaceBetween: 30,
+
+                    },
+                    992:{
+                 slidesPerView: 3,
+                spaceBetween: 30,
+
+                    }
+                }
+            });
+            const swiperistatistic = new Swiper(".slider--istatictic", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                breakpoints:{
+                    768:{
+                        slidesPerView:2,
+                        spaceBetween:30,
+                    },
+                    992:{
+                        slidesPerView:5,
+                        spaceBetween:30,
+                    },
+                    
+                }
+
+            });
+        </script>
+    </section>
+
+
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-4">
+                    <div class="blog-card">
+                        <div class="blog-card-img mb-3">
+                            <img src="assets/img/team/lady.png" alt="blog">
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-info-date mb-3">18 August 2023</div>
+                            <div class="blog-card-info-title mb-3 ">Open letter to the residents of Ellsworth, Maine
+                            </div>
+                            <div class="blog-card-info-link mb-3">
+                                <a href="#"> Read More </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-4">
+                    <div class="blog-card">
+                        <div class="blog-card-img mb-3">
+                            <img src="assets/img/team/lady2.png" class="" alt="blog">
+                        </div>
+                        <div class="blog-card-info mb-3">
+                            <div class="blog-card-info-date mb-3">18 August 2023</div>
+                            <div class="blog-card-info-title mb-3">Open letter to the residents of Ellsworth, Maine.Open
+                                letter to the residents of Ellsworth, Maine
+                            </div>
+                            <div class="blog-card-info-link mb-3">
+                                <a href="#"> Read More </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-4">
+                    <div class="blog-card">
+                        <div class="blog-card-img mb-3">
+                            <img src="assets/img/team/ilac.png" class=" alt=" blog">
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-info-date mb-3">18 August 2023</div>
+                            <div class="blog-card-info-title mb-3">Open letter to the residents of Ellsworth, Maine
+                            </div>
+                            <div class="blog-card-info-link mb-3">
+                                <a href="#"> Read More </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center pb-3 mb-3 border-bottom">
+
+            </div>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="section-service-title text fs-6">News Update</span>
+                        <div class="fs-4 fw-semibold text">Latest Healthcare Articles</div>
+                    </div>
+                    <a href="#" class="btn-main-blue-outline">Read All News</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="featured-blog-card">
+                        <div class="featured-blog-card-img">
+                            <img src="assets/img/team/lady.png" alt="blog">
+                        </div>
+                        <div class="featured-blog-card-info">
+                            <div class="featured-blog-card-info-time">
+                                18 Agust 2023
+                            </div>
+                            <div class="featured-blog-card-info-title">
+                                Open letter to the residents of Ellsworth, Maine
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="featured-blog-card">
+                        <div class="featured-blog-card-img">
+                            <img src="assets/img/team/lady2.png" alt="blog">
+                        </div>
+                        <div class="featured-blog-card-info">
+                            <div class="featured-blog-card-info-time"> 18 Agust 2023 </div>
+                            <div class="featured-blog-card-info-title">
+                                Open letter to the residents of Ellsworth, Maine
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="featured-blog-card">
+                        <div class="featured-blog-card-img">
+                            <img src="assets/img/team/lady3.png" alt="blog">
+                        </div>
+                        <div class="featured-blog-card-info">
+                            <div class="featured-blog-card-info-time">
+                                18 Agust 2023
+                            </div>
+                            <div class="featured-blog-card-info-title">
+                                Open letter to the residents of Ellsworth, Maine
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="featured-blog-card">
+                        <div class="featured-blog-card-img">
+                            <img src="assets/img/team/lady4.png" alt="blog">
+                        </div>
+                        <div class="featured-blog-card-info">
+                            <div class="featured-blog-card-info-time"> 18 Agust 2023 </div>
+                            <div class="featured-blog-card-info-title">
+                                Open letter to the residents of Ellsworth, Maine
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="end-blog-card">
+        <div class="container">
+           
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-xl-4 ">
+                        <div class="end-blog-card-left ">
+                            <img src="assets/img/team/Logo.png" class="mb-3" alt="">
+                            <div class="fs-3 fw-medium mt-4 lh-md ">
+                                “A Simple Story About The Doctorate Medical Center & Health Care Foundation
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9 col-xl-8 ">
+                        
+                        <div class="row mb-5  ">
+                            <div class="col-12 col-lg-auto">
+                                <a href="#" class="end-blog-card-phone">
+                                    <i class="icon-phone"></i>
+                                    <span>(+22) 123 - 4567 - 900</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a href="#" class="end-blog-card-mail">
+                                    <i class="icon-mail"></i>
+                                    <span>support@doctorate.com</span>
+                                </a>
+                            </div>
+                            
+                            <div class="col-12 col-lg-auto" >
+
+                                <div class="end-blog-card-right-social">
+                                    <img src="assets/img/team/Insta.png" alt="">
+                                <img src="assets/img/team/f.png" alt="">
+                                <img src="assets/img/team/Twiter.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-6 col-lg-4 mb-3">
+                                <div class="end-blog-card-right">
+                                    <div class="fs-5 fw-medium mb-3">
+                                        Explore
+                                    </div>
+                                    <a href="#">Home</a>
+                                    <a href="#">Services</a>
+                                    <a href="#">About us</a>
+                                    <a href="#">Testimonials</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-3">
+                                <div class="end-blog-card-right">
+                                    <div class="fs-5 fw-medium mb-3">
+                                        Uitility Pages
+                                    </div>
+                                    <a href="#">Style Guide</a>
+                                    <a href="#">Changelog</a>
+                                    <a href="#">Licenses</a>
+                                    <a href="#">Protected Page</a>
+                                    <a href="#">404 Page</a>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 col-lg-5">
+                                <div class="end-blog-card-third">
+                                    <div class="end-blog-card-right-third"></div>
+                                    <div class="end-blog-card-right-third-title mb-3">
+                                        Book an appointment
+                                    </div>
+                                    <div class="end-blog-card-right-third-desc mb-3">It is a long established fact that a
+                                        reader will be distracted</div>
+                                        <input type="email" name="" id="" class="end-blog-card-right-third-input mb-3" placeholder="your email address"
+                                        >
+                                       
+                                    <div class="end-blog-card-right-third-button ">
+                                        <a href="#" class="btn-main-blue "> Submit </a>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="bg-white text-center py-3">
+        <span>Copyright © Pharma | Designed by VictorFlow Templates </span>
+    </div>
+
+    <!--bu hep aşağıda-->
+    <!--35 cdn'ini body içine kaydediyoruz. "integrity"= şey gibi dosya yükle ama sunucunun ileride hacklenmesi durumunda ve bu yolu dosya yükle ama haklenmesi durumunda-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

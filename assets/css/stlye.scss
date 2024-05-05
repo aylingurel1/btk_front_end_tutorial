@@ -1,0 +1,749 @@
+$mainGreen: #0fe3af;
+
+:root {
+    --main-blue: #0152A8;
+    --main-green: #0fe3af;
+}
+
+.bg-main-blue {
+    background-color: var(--main-blue)
+}
+
+.bg-main-green {
+    background-color: var(--main-green)
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/*class lar üzerinden özellik değiştirmesi daha mantıklı id'lerden ziyade. bunu da "." koyup yapıyoruz*/
+.top-bar {
+    background-color: #0152A8;
+    color: #FFFFFF;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.top-bar a {
+    padding-left: 18px;
+    color: #FFFFFF;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ortak özellikler için bir class oluşturduk kod tekrarından kaçınmak için*/
+.top-bar .icon {
+    display: inline-block;
+    background-color: #0152A8;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+/*Bu trickle html tarafında icon diye classım var ve bu icon class ından sonra "." koyuyoruz . topbar dan sonra boşluk varsa içinde demek yoksa yanında demek*/
+.top-bar .icon.icon-phone {
+    background-image: url("../img/icon/phone.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-bar .icon.icon-mail {
+    background-image: url("../img/icon/mail.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-main-green {
+    background-color: #0FE3AF;
+    /* padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 36px;
+    padding-right: 36px;*/
+
+    /*padding: 16px 36px 16px 36px ;*/
+    padding: 16px 36px;
+    /*ilk değer y ekseni, ikinci değer x ekseni */
+    text-decoration: none;
+}
+
+.btn-main-blue {
+    display: inline-block;
+    background-color: #0152A8;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px 36px;
+    border: none;
+    outline: none;
+    &-outline{
+        border: 1.5px solid #dfdfdf;
+        padding: 16px 36px;
+       
+    }
+
+}
+
+.card-istatictic{
+    color:#ffffff;
+    text-align: center;
+    max-width: 1000px;
+
+    &-number{
+    font-size: 3.5rem;
+    font-weight: 600;
+
+    }
+    &-content{
+    text-transform: uppercase;
+    gap: 5px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    }
+}
+
+
+.service-card {
+    /* background: #FFFFFF;/*performans kaybettiriyor mikro düzeyde de olsa*/
+    background-color: #FFFFFF;
+    /*background color gibi net kodlar yazıyoruz ve okunaklılık açısından da daha iyi yoksa aralarında çok fark yok*/
+    padding: 45px 35px;
+    gap: 6px;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+}
+
+.service-card-hover-img {
+    display: none;
+}
+
+.service-card-hover-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.service-card:hover .service-card-hover-img {
+    display: block;
+    /* üzerinde tıklamdığında gide*/
+
+}
+
+.service-card:hover .service-card-content {
+    display: none;
+}
+
+.service-card-img {
+    width: 54px;
+    height: 54px;
+}
+
+.service-card-title {
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #545454;
+}
+
+.service-card-desc {
+    color: #545454;
+}
+
+.service-card-link {
+    color: #545454;
+    display: flex;
+    align-items: center;
+}
+
+.service-card-link::after {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/icon/readmoreicon.png");
+
+}
+
+.service-card-icon-phone {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline;
+    background-image: url("../img/icon/phone.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.section-service-title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    /* kelimenin her harf araslerinin 3px açıldı*/
+    border: 0.5px solid #CECECE;
+    /*ilki çizgi kalınlığı ,solid=düz çizgi, üçüncü de renk*/
+    padding: 5px 10px;
+    /*1 yukarı 2 sağ 3 aşağı 4 sola. burada solu yazmadık sol değeri sağın aynısını alıyor*/
+    border-radius: 2px;
+    transition: all 300ms;
+    /*arka plan rengi y*/
+    display: inline-block;
+    
+    
+}
+
+.section-service-title2 {
+
+    background-color: #0152A8;
+    padding: 16px 36px;
+    color: #FFFFFF;
+
+}
+
+.section-service-title:hover {
+    background-color: #CECECE;
+    border-color: #1c1c1c;
+
+}
+
+.brand {
+    margin-bottom: 100px;
+}
+
+
+.call-center {
+    background-color: #545454;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom top;
+    padding: 40px 0;
+    background-image: url("../img/team/call.png");
+    background-attachment: fixed;
+}
+
+
+
+
+.btn-main-blue {
+    background-color: #0152A8;
+    padding: 16px 36px;
+    color: #ffffff;
+
+}
+.call-center-card{
+    background-color: #FFFFFF;
+    padding: 55px;
+}
+.call-center-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #0FE3AF;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.call-center-card-icon .card-icon-1 {
+
+    display: inline-block;
+    width: 24px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.meeting-wrapper {
+    background-color: var(--main-blue, #1a8953);
+    background-image: url(../img/icon/sagpetek.png), url(../img/icon/solpetek.png);
+    /*biri birini ezmesin diye alt alta değil de virgülle ayırdık*/
+    background-repeat: no-repeat;
+    /*birden fazla olmasın diye tekrarlamayı kapattık*/
+    background-position: right top, bottom left;
+    /*sağ üste aldık top right da aynı şey ikinciyi virgülle ayırdık*/
+    display: flex;
+    justify-content: center;
+    /*ortaladık*/
+    align-items: center;
+    /*ortaladık*/
+    flex-direction: column;
+    /*butonu aşağı almış olduk*/
+    text-align: center;
+    /*yazıyı ortaladık*/
+    gap: 15px;
+    padding: 100px 2rem;
+
+}
+
+.meeting-wrapper-content {
+    max-width: 500px;
+    /*br kullanmadan satır aşağı yapma 500ün üstü bi alt satıra atar*/
+    color: #ffffff;
+
+}
+
+.special-care-list {
+    padding-left: 0;
+}
+
+.special-care-list li {
+    background-image: url(../img/icon/tik.png);
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    list-style: none;
+    /*listedeki noktayı kaldırdır*/
+    padding-left: 30px;
+    /* 30 sola kaydı ikon*/
+    font-weight: 600;
+}
+
+.special-care-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.special-care-content {
+    display: flex;
+    /*sağı solu eşitlemek için*/
+
+    position: relative;
+
+
+}
+
+.special-care-content-info {
+    background-color: #000000;
+    padding: 5px 10px;
+    position: absolute;
+    /*özgürleşti*/
+    bottom: 80px;
+    left: 177px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.feedback-card {
+    background-color: #F1F1f1;
+    padding: 50px;
+    margin-bottom: 15px;
+
+
+}
+
+
+
+.icon-star {
+    display: inline-block;
+    background-image: url("../img/icon/star-active.png");
+    /*starın gri rengini*/
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+
+    &.active {
+        /*.icon-star.active yıldızlara renk verdik*/
+        /* bolşuk varsa içinde ,boşluk yoksa yanında*/
+        background-image: url(../img/icon/star.png);
+
+    }
+
+    /*&-title*/
+}
+
+.why-choose-us{
+    background-color:#dcedfe;
+    background-image:url("../img/team/line-1.png"), url("../img/team/line-2.png");
+    background-repeat:no-repeat;
+    background-position:top left,right bottom;
+    padding:120px 0
+  }
+  .why-choose-us-url{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-column-gap:50px;
+    -moz-column-gap:50px;
+    column-gap:50px;
+    row-gap:40px;
+    max-width:910px;
+    margin-left:auto;
+    margin-right:auto
+  }
+  .why-choose-us-url a{
+    display:-webkit-inline-box;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    color:#0152a8
+  }
+  .why-choose-us-url a::before{
+      content:"";
+      display:inline-block;
+      background-image:url("../img/icon/tik.png");
+      background-size:contain;
+      background-position:center;
+      width:20px;
+      height:20px;
+      margin-right:5px
+  }
+
+
+.team-card {
+    background-color: #004a99;
+    padding: 30px;
+    &-img {
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-line{
+       margin-left: 150px;
+    
+        
+    }
+    &-title {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    &-desc {
+        color: #ffffff;
+        font-weight: 300;
+        text-align: center;
+    }
+    &-social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        gap: 15px;
+
+        a {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            color: #ffffff;
+            text-decoration: underline;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            &.icon-instagram {
+                background-image: url("../img/team/whiteinsta.png");
+            }
+            &.icon-facebook {
+                background-image: url("../img/team/facebook.png");
+            }
+            &.icon-twitter {
+                background-image: url("../img/team/whitetwiter.png");
+            }
+        }
+    }
+}
+
+
+.swiper-slide {
+    .slider-main-content {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.swiper-slide-active {
+    .slider-main-content {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+.slider-main {
+    --slider-height: 30vh;
+    @media (min-width: 768px) { 
+        --slider-height: 80vh;
+    }
+
+    &-content {
+        display: flex;
+        align-items: flex-start;
+        position: absolute;
+        
+        max-width: 500px;
+        
+        justify-content: center;
+        gap: 15px;
+        flex-direction: column;
+        transition: all 1000ms;
+        max-width: 500px;
+
+        &-top-info {
+            display: inline-block;
+            padding: 3px 10px;
+            /* background-color: $mainGreen;*/
+            background-color: var(--main-green);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #1c1c1c
+        }
+
+        &-title {
+
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 120%;
+            /*bir kelimeni bir satırda tuttuğu yükseklik ve px olarak verilmez*/
+            color: #143450;
+            @media (min-width: 768px) { 
+                font-size: 3.5rem;
+            }
+        }
+
+        &-desc {
+            font-size: 1rem;
+            color: #1c1c1c
+        }
+
+    }
+
+    &-img {
+        width: 100%;
+        height: var(--slider-height);
+        object-fit: cover;
+    }
+}
+
+.slider--istatictic {
+    color: #FFFFFF;
+    gap: 15px;
+    text-align: center;
+    text-transform: uppercase;
+
+    max-width: 1000px;
+
+    &-number {
+        gap: 15px;
+        font-size: 3.5rem;
+        font-weight: 600;
+    
+
+
+    }
+
+    &-content {
+        letter-spacing: 4px;
+        gap: 5px;
+        
+        font-weight: 100;
+        line-height: 170%;
+    }
+}
+
+.blog-card {
+    letter-spacing: 20;
+    gap: 15;
+
+    &-img {
+        img {
+            width: 100%;
+        }
+
+
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10;
+
+        &-date {
+            display: inline;
+            padding: 5px;
+            text-transform: uppercase;
+            /*blog-card-info-date*/
+            color: #1C1C1C;
+            width: 180px;
+            border: 1px solid #858383;
+            font-weight: 200;
+            letter-spacing: 5px;
+            font-size: 0.85rem;
+
+        }
+
+        &-title {
+            color: #1c1c1c;
+            font-weight: 500;
+            font-size: 20px;
+            font-size: 1.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis
+
+        }
+
+
+    }
+
+  
+
+}
+
+.featured-blog-card {
+    padding: 10px;
+    display: flex;
+    margin-bottom: 30px;
+
+    &-img {
+        width: 220px;
+        margin-right: 30px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    &-info {
+        &-time {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            border: 1px solid #858383;
+            display: inline-block;
+
+        
+
+        }
+        &-title{
+            font-weight: 500;
+            font-size: 20px;
+            font-size: 1.5rem;
+            
+            
+
+        }
+    }
+}
+
+
+.end-blog-card{
+    background-color: #e5f2ef;
+    background-image: url("../img/team/line-1.png"), url("../img/team/line-2.png");
+    background-repeat: no-repeat;
+    background-position: top left, right bottom;
+    padding: 80px 0;
+
+    &-phone , &-mail{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: #545454;
+    }
+    .icon-phone,
+    .icon-mail {
+        display: inline-block;
+        background-color: var(--main-green);
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+    .icon-phone {
+        background-image: url("../img/team/phone.png");
+    }
+    .icon-mail {
+        background-image: url("../img/team/mail.png");
+    }
+    &-left{
+        &-info{
+            font-weight: 300;
+            font-size: 20px;
+    
+        }
+    }
+    &-right{
+        &-social{
+            display: flex;
+            align-items: center;
+            
+            height: 100%;
+            gap: 30px;
+            @media (min-width: 992px) { 
+                justify-content: flex-end;/*992 den büyükse çalışacak içine yazdığımız kodlar*/
+            }
+        }
+        a {
+            display: block;
+            color: #545454;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        &-first{
+            &-title{
+                font-weight: 500;
+            font-size: 20px;
+            font-size: 1.5rem;
+
+            }
+            &-info{
+                display:block;
+
+            }
+        }
+        &-second{
+            &-title{
+                font-weight: 500;
+            font-size: 20px;
+            font-size: 1.5rem;
+         }
+         }
+        &-third{
+            &-title{
+             font-weight: 500;
+            font-size: 20px;
+            font-size: 1.5rem;
+            
+           
+         }
+         &-button{
+            border: 5px;
+            margin-top: 20px;
+            
+        }
+         &-input{
+            border: none;
+           outline: none;
+           width: 100%;
+           padding: 20px 25px;
+         background-color: #ffffff;
+        }
+         
+        }
+    }
+}
+
+@media (min-width: 992px) { 
+    .hidden-mobile{
+        display: none;
+    }
+}/*991 pixel olduğu an kod yok olur+kod sayfaya çağrılmaz,gelmez. 992 pixelden büyükse classlar çalışır+@media nın olayı bu*/
