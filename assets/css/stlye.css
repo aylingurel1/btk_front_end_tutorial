@@ -424,11 +424,11 @@ a {
 }
 
 .slider-main {
-  --slider-height: 30vh;
+  --slider-height: 80dvh;
 }
 @media (min-width: 768px) {
   .slider-main {
-    --slider-height: 80vh;
+    --slider-height: 60dvh;
   }
 }
 .slider-main-content {
@@ -440,7 +440,7 @@ a {
   gap: 15px;
   flex-direction: column;
   transition: all 1000ms;
-  max-width: 500px;
+  height: var(--slider-height);
 }
 .slider-main-content-top-info {
   display: inline-block;
@@ -452,7 +452,7 @@ a {
   color: #1c1c1c;
 }
 .slider-main-content-title {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 120%;
   /*bir kelimeni bir satırda tuttuğu yükseklik ve px olarak verilmez*/
@@ -642,4 +642,11 @@ a {
   .hidden-mobile {
     display: none;
   }
-} /*991 pixel olduğu an kod yok olur+kod sayfaya çağrılmaz,gelmez. 992 pixelden büyükse classlar çalışır+@media nın olayı bu*//*# sourceMappingURL=stlye.css.map */
+} /*991 pixel olduğu an kod yok olur+kod sayfaya çağrılmaz,gelmez. 992 pixelden büyükse classlar çalışır+@media nın olayı bu*/
+.fe-2 {
+  font-size: 1 rem !important;
+}
+
+#titlefeel {
+  font-size: 2 rem !important;
+}/*# sourceMappingURL=stlye.css.map */

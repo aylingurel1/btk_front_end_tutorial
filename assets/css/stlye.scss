@@ -475,9 +475,9 @@ a {
 }
 
 .slider-main {
-    --slider-height: 30vh;
+    --slider-height: 80dvh;
     @media (min-width: 768px) { 
-        --slider-height: 80vh;
+        --slider-height: 60dvh;
     }
 
     &-content {
