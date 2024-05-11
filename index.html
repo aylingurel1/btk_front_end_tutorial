@@ -13,38 +13,39 @@
 
     <link rel="stylesheet" href="assets/css/stlye.css"><!--css dosyasının yolunu kaydediyoruz-->
     <!--swipperdan çektik/ link ve script yerini değiştirdik-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
 <body>
+    <div class="top-bar">
+        <div class="container"> <!--container class'tır-->
+            <div class="row">
+                <div class="col-12 col-lg-6">
 
-    <header>
-        <div class="top-bar">
-            <div class="container"> <!--container class'tır-->
-                <div class="row">
-                    <div class="col-12 col-lg-6">
+                    <span>Welcome to Pharma. We provides medical accessoies</span>
+                </div>
 
-                        <span>Welcome to Pharma. We provides medical accessoies</span>
-                    </div>
-
-                    <div class="col-12 col-lg-6">
-                        <div class="d-flex justify-content-end">
-                            <!--gap değeri iki fleximin(kutunun) arasındaki boşluğu sağlıyor-->
-                            <a href="tel:+(404) 850 - 7080" class="d-flex gap-2 align-items-center me-4">
-                                <i class="icon icon-phone"></i>
-                                <span class="me-2"> +(404) 850 - 7080</span>
-                            </a>
-                            <a href="#" class="d-flex gap-2 align-items-center">
-                                <i class="icon icon-mail"></i>
-                                <span class=" me-2"> info@aylngurel.org</span>
-                            </a>
-                        </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex justify-content-end">
+                        <!--gap değeri iki fleximin(kutunun) arasındaki boşluğu sağlıyor-->
+                        <a href="tel:+(404) 850 - 7080" class="d-flex gap-2 align-items-center me-4">
+                            <i class="icon icon-phone"></i>
+                            <span class="me-2"> +(404) 850 - 7080</span>
+                        </a>
+                        <a href="#" class="d-flex gap-2 align-items-center">
+                            <i class="icon icon-mail"></i>
+                            <span class=" me-2"> info@aylngurel.org</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <header class="sticky-top">
+     
 
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -64,7 +65,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Pricing</a>
@@ -110,7 +111,7 @@
                 <div class="swiper-slide">
                     <div class="slider-main">
                         <div class="container position-relative"> <!--çizgilerin dışına çıkmasın diye relative -->
-                            <div class="slider-main-content">
+                            <div class="slider-main-content fs-2">
                                 <div class="slider-main-content-top-info">
                                     MEDICAL PROFESSINS
                                 </div>
@@ -135,9 +136,13 @@
                 </div>
             </div>
             <script>
-                const swiper = new Swiper(".slider--main", {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
+
+                document.addEventListener("DOMContentLoaded", (event) => {
+                    const swiper = new Swiper(".slider--main", {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+
+                    });
 
                 });
             </script>
@@ -151,7 +156,7 @@
 
             <div class="text-center">
                 <span class="section-service-title">Services</span>
-                <div class="fs-1" fw-medium>Feel Like Home With Best<br> Medical Care</div>
+                <div class="fs-2 " fw-medium id="titlefeel">Feel Like Home With Best<br> Medical Care</div>
             </div>
             <!--o kutulara service-card dedik. service card hover olduğu durumda content in içine aldık. gizledikten sonra da img göster dedik-->
             <div class="row me-5">
@@ -383,31 +388,32 @@
                         <div class="fs-5 fw-normal">Capitalize on low hanging fruit to identify a ballpark value
                             added activity to beta test. Override the digital divide with information highway will
                             close.</div>
-                            <div class="row my-4">
-                                <div class="col-6">
-                                        <div class="d-flex gap-2"> 
-                                            <div class="call-center-card-icon">
-                                                <i class="card-icon-1">
-                                                    <img src="assets/img/icon/button1.png" alt="">
-                                                </i>
-                                            </div> 
-                                            <span>Multi Speciality Pharma Treatment</span>  
-                                        </div>  
-                                </div>
-                                <div class="col-6">
-                                    <div class="d-flex gap-2">
-                                        <div class="call-center-card-icon">
-                                            <i class="card-icon-1">
-                                                <img src="assets/img/icon/button2.png" alt="">
-                                            </i>
-                                        </div> 
-                                        <span>24 Hours Medical Service</span>
+                        <div class="row my-4">
+                            <div class="col-6">
+                                <div class="d-flex gap-2">
+                                    <div class="call-center-card-icon">
+                                        <i class="card-icon-1">
+                                            <img src="assets/img/icon/button1.png" alt="">
+                                        </i>
                                     </div>
-    
-                                
+                                    <span>Multi Speciality Pharma Treatment</span>
                                 </div>
-                            </div>
-                  <a href="#" class="btn-main-blue">More About Us</a>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex gap-2">
+                                    <div class="call-center-card-icon">
+                                        <i class="card-icon-1">
+                                            <img src="assets/img/icon/button2.png" alt="">
+                                        </i>
+                                    </div>
+                                    <span>24 Hours Medical Service</span>
+                                </div>
+
+
+                            </div>
+                                      
+                        </div>
+                        <a href="#" class="btn-main-blue">More About Us</a>
 
                     </div>
                 </div>
@@ -474,12 +480,14 @@
                     <div class="row">
                         <div class="col-6 ">
                             <div class="special-care-content-img">
-                                <img src="assets/img/icon/doctor1.png" class="w-100 h-100 object-fit-cover" alt="specialcare">
+                                <img src="assets/img/icon/doctor1.png" class="w-100 h-100 object-fit-cover"
+                                    alt="specialcare">
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="special-care-content-img">
-                                <img src="assets/img/icon/doctor2.png" class="w-100 h-100 object-fit-cover" alt="specialcare">
+                                <img src="assets/img/icon/doctor2.png" class="w-100 h-100 object-fit-cover"
+                                    alt="specialcare">
                             </div>
                         </div>
                     </div>
@@ -591,28 +599,33 @@
 
         </div>
         <script>
-            const swiper2 = new Swiper(".slider--feedback-card", {
-                
-                slidesPerView: 1,//bütün ekranlarda 2 gözükür kırılım nokrası vermediğim için
-                spaceBetween: 15,// tablet ve mobilim 1 görecek
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                breakpoints: {
-               
-              720: {
-              slidesPerView: 2,
-              spaceBetween: 30,
-               },
-               992: {
-               slidesPerView: 3,
-               spaceBetween: 30,
-                },},
-              
-   
-            }
-            );
+
+            document.addEventListener("DOMContentLoaded", (event) => {
+                const swiper2 = new Swiper(".slider--feedback-card", {
+
+                    slidesPerView: 1,//bütün ekranlarda 2 gözükür kırılım nokrası vermediğim için
+                    spaceBetween: 15,// tablet ve mobilim 1 görecek
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    breakpoints: {
+
+                        720: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        992: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                    },
+
+
+                }
+                );
+
+            });
 
         </script>
     </section>
@@ -702,11 +715,29 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-slide mb-5">
+                            <div class="team-card ">
+                                <div class="team-card-img">
+                                    <img src="assets/img/team/member-3.png" alt="">
+                                </div>
+                                <div class="team-card-title">
+                                    Dr. Kate Winslot
+                                </div>
+                                <div class="team-card-desc">
+                                    Dental Patient
+                                </div>
+                                <div class="team-card-social-media">
+                                    <a href="#" class="icon-facebook"></a>
+                                    <a href="#" class="icon-twitter"></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <img src="assets/img/team/line.png" class="team-card-line w-100">
+            
             <div class="container pt-5">
+                <img src="assets/img/team/line.png" class="team-card-line w-100">
                 <div class="swiper slider--istatictic">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -759,42 +790,46 @@
 
         </div>
         <script>
-            const swiper1 = new Swiper(".slider--team", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                breakpoints:{
-                    768:{
-                slidesPerView: 2,
-                spaceBetween: 30,
-
+            document.addEventListener("DOMContentLoaded", (event) => {
+                const swiper1 = new Swiper(".slider--team", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
                     },
-                    992:{
-                 slidesPerView: 3,
-                spaceBetween: 30,
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+
+                        },
+                        992: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+
+                        }
+                    }
+                });
+                const swiperistatistic = new Swiper(".slider--istatictic", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        992: {
+                            slidesPerView: 5,
+                            spaceBetween: 30,
+                        },
 
                     }
-                }
-            });
-            const swiperistatistic = new Swiper(".slider--istatictic", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                breakpoints:{
-                    768:{
-                        slidesPerView:2,
-                        spaceBetween:30,
-                    },
-                    992:{
-                        slidesPerView:5,
-                        spaceBetween:30,
-                    },
-                    
-                }
+
+                });
 
             });
+
         </script>
     </section>
 
@@ -802,7 +837,7 @@
     <section>
         <div class="container py-5">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 mb-4">
                     <div class="blog-card">
                         <div class="blog-card-img mb-3">
                             <img src="assets/img/team/lady.png" alt="blog">
@@ -820,7 +855,7 @@
 
 
                 </div>
-                <div class="col-4">
+                <div class="col-4 mb-4">
                     <div class="blog-card">
                         <div class="blog-card-img mb-3">
                             <img src="assets/img/team/lady2.png" class="" alt="blog">
@@ -839,7 +874,7 @@
 
 
                 </div>
-                <div class="col-4">
+                <div class="col-4 mb-4">
                     <div class="blog-card">
                         <div class="blog-card-img mb-3">
                             <img src="assets/img/team/ilac.png" class=" alt=" blog">
@@ -955,8 +990,8 @@
     </section>
     <footer>
         <div class="end-blog-card">
-        <div class="container">
-           
+            <div class="container">
+
                 <div class="row">
                     <div class="col-12 col-lg-3 col-xl-4 ">
                         <div class="end-blog-card-left ">
@@ -968,7 +1003,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-9 col-xl-8 ">
-                        
+
                         <div class="row mb-5  ">
                             <div class="col-12 col-lg-auto">
                                 <a href="#" class="end-blog-card-phone">
@@ -982,13 +1017,13 @@
                                     <span>support@doctorate.com</span>
                                 </a>
                             </div>
-                            
-                            <div class="col-12 col-lg-auto" >
+
+                            <div class="col-12 col-lg-auto">
 
                                 <div class="end-blog-card-right-social">
                                     <img src="assets/img/team/Insta.png" alt="">
-                                <img src="assets/img/team/f.png" alt="">
-                                <img src="assets/img/team/Twiter.png" alt="">
+                                    <img src="assets/img/team/f.png" alt="">
+                                    <img src="assets/img/team/Twiter.png" alt="">
                                 </div>
 
                             </div>
@@ -1017,30 +1052,31 @@
                                     <a href="#">404 Page</a>
                                 </div>
                             </div>
-                            
+
                             <div class="col-12 col-lg-5">
                                 <div class="end-blog-card-third">
                                     <div class="end-blog-card-right-third"></div>
                                     <div class="end-blog-card-right-third-title mb-3">
                                         Book an appointment
                                     </div>
-                                    <div class="end-blog-card-right-third-desc mb-3">It is a long established fact that a
+                                    <div class="end-blog-card-right-third-desc mb-3">It is a long established fact that
+                                        a
                                         reader will be distracted</div>
-                                        <input type="email" name="" id="" class="end-blog-card-right-third-input mb-3" placeholder="your email address"
-                                        >
-                                       
+                                    <input type="email" name="" id="" class="end-blog-card-right-third-input mb-3"
+                                        placeholder="your email address">
+
                                     <div class="end-blog-card-right-third-button ">
                                         <a href="#" class="btn-main-blue "> Submit </a>
 
-                                    
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
     </footer>
     <div class="bg-white text-center py-3">
@@ -1052,6 +1088,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 </body>

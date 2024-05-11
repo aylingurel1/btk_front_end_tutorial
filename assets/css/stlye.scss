@@ -23,6 +23,7 @@ body {
     color: #FFFFFF;
     padding-top: 18px;
     padding-bottom: 18px;
+    
 }
 
 .top-bar a {
@@ -504,11 +505,12 @@ a {
 
         &-title {
 
-            font-size: 1rem;
+            font-size: 2rem;
             font-weight: 700;
             line-height: 120%;
             /*bir kelimeni bir satırda tuttuğu yükseklik ve px olarak verilmez*/
             color: #143450;
+            
             @media (min-width: 768px) { 
                 font-size: 3.5rem;
             }
@@ -747,3 +749,39 @@ a {
         display: none;
     }
 }/*991 pixel olduğu an kod yok olur+kod sayfaya çağrılmaz,gelmez. 992 pixelden büyükse classlar çalışır+@media nın olayı bu*/
+.fe-2{
+    font-size: 1 rem !important;
+}
+
+#titlefeel{
+    font-size: 2 rem !important;
+}
+
+
+.blog-category-wrapper{
+    background-color: #CECECE;
+    border: 1px solid #1c1c1c;
+    height: 100%;
+    margin-bottom: 3rem;
+
+    .blog-category{
+        max-width: 300px;
+        height: 100%;
+        
+        &-title{
+            position: -webkit-sticky;
+            top: 0;
+            display: inline-block;
+            color: #858383;
+            background-color: #000000;
+            width: 300;
+        }
+        a{
+            display: block;
+            margin: 0;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            color: #1C1C1C;
+        }
+    }
+}
