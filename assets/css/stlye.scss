@@ -484,14 +484,13 @@ a {
         display: flex;
         align-items: flex-start;
         position: absolute;
-        
-        max-width: 500px;
-        
+        max-width: 500px;  
         justify-content: center;
         gap: 15px;
         flex-direction: column;
         transition: all 1000ms;
-        max-width: 500px;
+        height: var(--slider-height);
+        
 
         &-top-info {
             display: inline-block;
