@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Bizim kullandığımz bootstrap'in grid i kütüphane 12 li grid üzerinden devam ediyor ama daha fazla olanları da var.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--bootstrap cdn ile projeye yüklemiş olduk.css dosyasını buraya/integrity ilgili dosya değişirse html tutayacağı için inmeyecek-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="assets/css/stlye.css"><!--css dosyasının yolunu kaydediyoruz-->
+    <!--swipperdan çektik/ link ve script yerini değiştirdik-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="sticky-top">
+        <div class="top-bar">
+            <div class="container"> <!--container class'tır-->
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+
+                        <span>Welcome to Pharma. We provides medical accessoies</span>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex justify-content-end">
+                            <!--gap değeri iki fleximin(kutunun) arasındaki boşluğu sağlıyor-->
+                            <a href="tel:+(404) 850 - 7080" class="d-flex gap-2 align-items-center me-4">
+                                <i class="icon icon-phone"></i>
+                                <span class="me-2"> +(404) 850 - 7080</span>
+                            </a>
+                            <a href="#" class="d-flex gap-2 align-items-center">
+                                <i class="icon icon-mail"></i>
+                                <span class=" me-2"> info@aylngurel.org</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/icon/Logo.png" alt="Logo">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a href="#" class="btn-main-green"> Appointment </a>
+
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-card-img mb-3">
+                            <img src="assets/img/team/lady.png" alt="blog.html">
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-info-date mb-3">18 August 2023</div>
+                            <div class="blog-card-info-title mb-3 ">Open letter to the residents of Ellsworth, Maine
+                            </div>
+                            <div class="blog-card-info-link mb-3">
+                                <a href="#"> Read More </a>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <div class="col-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-card-img mb-3">
+                            <img src="assets/img/team/lady2.png" class="" alt="blog">
+                        </div>
+                        <div class="blog-card-info mb-3">
+                            <div class="blog-card-info-date mb-3">18 August 2023</div>
+                            <div class="blog-card-info-title mb-3">Open letter to the residents of Ellsworth, Maine.Open
+                                letter to the residents of Ellsworth, Maine
+                            </div>
+                            <div class="blog-card-info-link mb-3">
+                                <a href="#"> Read More </a>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+              
+                <div class="col-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-card-img mb-3">
+                            <img src="assets/img/team/ilac.png" class=" alt=" blog">
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-info-date mb-3">18 August 2023</div>
+                            <div class="blog-card-info-title mb-3">Open letter to the residents of Ellsworth, Maine
+                            </div>
+                            <div class="blog-card-info-link mb-3">
+                                <a href="#"> Read More </a>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <div class="col-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-card-img mb-3">
+                            <img src="assets/img/team/lady.png" alt="blog.html">
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-info-date mb-3">18 August 2023</div>
+                            <div class="blog-card-info-title mb-3 ">Open letter to the residents of Ellsworth, Maine
+                            </div>
+                            <div class="blog-card-info-link mb-3">
+                                <a href="#"> Read More </a>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <div class="col-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-card-img mb-3">
+                            <img src="assets/img/team/lady2.png" class="" alt="blog">
+                        </div>
+                        <div class="blog-card-info mb-3">
+                            <div class="blog-card-info-date mb-3">18 August 2023</div>
+                            <div class="blog-card-info-title mb-3">Open letter to the residents of Ellsworth, Maine.Open
+                                letter to the residents of Ellsworth, Maine
+                            </div>
+                            <div class="blog-card-info-link mb-3">
+                                <a href="#"> Read More </a>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+              
+                <div class="col-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-card-img mb-3">
+                            <img src="assets/img/team/ilac.png" class=" alt=" blog">
+                        </div>
+                        <div class="blog-card-info">
+                            <div class="blog-card-info-date mb-3">18 August 2023</div>
+                            <div class="blog-card-info-title mb-3">Open letter to the residents of Ellsworth, Maine
+                            </div>
+                            <div class="blog-card-info-link mb-3">
+                                <a href="#"> Read More </a>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+    
+    </section>
+    <section>
+        <div class="container">
+            <div class="blog-category-wrapper">
+                <div class="blog-category ">
+                    <div class="blog-category-title ">
+                    Blog Kategori
+                    </div>
+                    <a href="#"> blog link 1</a>
+                    <a href="#"> blog link 2</a>
+                    <a href="#"> blog link 3</a>
+                    <a href="#"> blog link 4</a>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="end-blog-card">
+            <div class="container">
+    
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-xl-4 ">
+                        <div class="end-blog-card-left ">
+                            <img src="assets/img/team/Logo.png" class="mb-3" alt="">
+                            <div class="fs-3 fw-medium mt-4 lh-md ">
+                                “A Simple Story About The Doctorate Medical Center & Health Care Foundation
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9 col-xl-8 ">
+    
+                        <div class="row mb-5  ">
+                            <div class="col-12 col-lg-auto">
+                                <a href="#" class="end-blog-card-phone">
+                                    <i class="icon-phone"></i>
+                                    <span>(+22) 123 - 4567 - 900</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a href="#" class="end-blog-card-mail">
+                                    <i class="icon-mail"></i>
+                                    <span>support@doctorate.com</span>
+                                </a>
+                            </div>
+    
+                            <div class="col-12 col-lg-auto">
+    
+                                <div class="end-blog-card-right-social">
+                                    <img src="assets/img/team/Insta.png" alt="">
+                                    <img src="assets/img/team/f.png" alt="">
+                                    <img src="assets/img/team/Twiter.png" alt="">
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-6 col-lg-4 mb-3">
+                                <div class="end-blog-card-right">
+                                    <div class="fs-5 fw-medium mb-3">
+                                        Explore
+                                    </div>
+                                    <a href="#">Home</a>
+                                    <a href="#">Services</a>
+                                    <a href="#">About us</a>
+                                    <a href="#">Testimonials</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 mb-3">
+                                <div class="end-blog-card-right">
+                                    <div class="fs-5 fw-medium mb-3">
+                                        Uitility Pages
+                                    </div>
+                                    <a href="#">Style Guide</a>
+                                    <a href="#">Changelog</a>
+                                    <a href="#">Licenses</a>
+                                    <a href="#">Protected Page</a>
+                                    <a href="#">404 Page</a>
+                                </div>
+                            </div>
+    
+                            <div class="col-12 col-lg-5">
+                                <div class="end-blog-card-third">
+                                    <div class="end-blog-card-right-third"></div>
+                                    <div class="end-blog-card-right-third-title mb-3">
+                                        Book an appointment
+                                    </div>
+                                    <div class="end-blog-card-right-third-desc mb-3">It is a long established fact that
+                                        a
+                                        reader will be distracted</div>
+                                    <input type="email" name="" id="" class="end-blog-card-right-third-input mb-3"
+                                        placeholder="your email address">
+    
+                                    <div class="end-blog-card-right-third-button ">
+                                        <a href="#" class="btn-main-blue "> Submit </a>
+    
+    
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    </footer>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
